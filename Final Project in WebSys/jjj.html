@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <label for="select-box">Choose an option:</label>
+    <select id="select-box">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+    
+    <button onclick="showOutput()">Show Output</button>
+    <p id="output"></p>
+
+<script>
+function showOutput() {
+  var input = document.getElementById("select-box").value;
+  document.getElementById("output").innerHTML = "Output: " + input;
+}
+</script>
+</body>
+</html>
